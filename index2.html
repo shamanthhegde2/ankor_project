@@ -28,24 +28,29 @@
 <body>
     <div class="main-content">
         <h2 class="welcome-message">Welcome Back!</h2>
-        <button type="button" class="btn btn-danger">Login with Google</button>
-        <a class="display" href="">Or Login using</a>
+        <button type="button" class="btn btn-danger">Signup with Google</button>
+        <a class="display" href="">Or Signup using</a>
         <form action="" class="need-validation">
             <div class="form-group">
-                <input type="email" class="form-control email" name="email" id="email" placeholder="Email Address" required>
-                <div class="invalid-feedback"><i class="fas fa-exclamation-circle"></i><span>wrong email</span></div>
+                <input type="text" class="form-control email" name="name" id="name" placeholder="Name" required>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control password" name="password" id="password" placeholder="*******" required>
-                <div class="invalid-feedback"><i class="fas fa-exclamation-circle"></i><span>wrong password!</span></div>
+                <input type="email" class="form-control email" name="email" id="email" placeholder="Email Address" required>
             </div>
-            <a class="display underline" href="">Forgot password?</a>
-            <input type="submit" value="Login" class="btn btn-primary">
+            <div class="form-group">
+                <input type="password" class="form-control password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control email" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <div class="validation"></div>
+            <input type="submit" value="Signup" class="btn btn-primary">
         </form>
-        <a class="display underline" href="index2.html">New here ? Register Now</a>
+        <a class="display underline" href="index.html">Have an account ? Login</a>
     </div>
     <footer>
         <p><i class="far fa-copyright"></i>XAM,A Product of Ankor</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
