@@ -1,0 +1,42 @@
+body{
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.main-content{
+    width: 350px;
+    background-color: white;
+    margin: 3% auto auto auto;
+    padding: 4% 2%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 2px 4px rgb(226, 223, 223);
+}
+.welcome-message{
+    color: rgba(57, 57, 233, 0.808);
+    font-weight: lighter;
+    margin:0 0 15% 0;
+}
+.display{
+    display: block;
+    margin: 10% 0;
+}
+button,input{
+    width: 90%;
+}
+a.underline{
+    text-decoration: underline;
+}
+footer{
+    color:grey;
+    margin: 2% 0 0 0;
+}
+.invalid-feedback{
+    text-align: left;
+    margin-left: 2px;
+}
+
+span{
+    margin:1% 2%;
+    text-align: center;
+    display: inline-block;
+}
