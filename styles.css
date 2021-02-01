@@ -40,3 +40,8 @@ span{
     text-align: center;
     display: inline-block;
 }
+.validation{
+    color: red;
+    margin-bottom: 2%;
+    font-weight: bolder;
+}

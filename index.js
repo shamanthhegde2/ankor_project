@@ -12,7 +12,8 @@
 //     }
 //     validate.classList.add("was-validated");
 // })
-var validate=document.querySelector(".need-validation");;
+var validate=document.querySelector(".need-validation");
+var validation=document.querySelector(".validation");
 validate.addEventListener('submit',function(event){
     var password=document.querySelector("#password");
     var confirmPassword=document.querySelector("#confirmPassword");
@@ -20,6 +21,10 @@ validate.addEventListener('submit',function(event){
     {
         event.preventDefault();
         event.stopPropagation();
+        validation.innerHTML="⚠ password mismatch";
         
     }
+    setTimeout(function(){
+        validation.innerHTML="";
+    },1700);
 })
