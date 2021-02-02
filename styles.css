@@ -1,47 +1,89 @@
-body{
-    background-color: #e9ecef;
-    text-align: center;
+/* to style the body */
+body {
+  background-color: #e9ecef;
+  text-align: center;
+}
+/* to style the main content inside */
+.main-content {
+  max-width: 350px;
+  background-color: white;
+  margin: 3% auto auto auto;
+  padding: 0% 2% 4%;
+  border-radius: 2%;
+  box-shadow: 1px 1px 2px 4px rgb(226, 223, 223);
+  position: relative;
+}
+/* to style the welcome message on the top */
+.welcome-message {
+  color: rgba(57, 57, 233, 0.808);
+  font-weight: lighter;
+  margin: 0 0 15% 0;
 }
 
-.main-content{
-    width: 350px;
-    background-color: white;
-    margin: 3% auto auto auto;
-    padding: 4% 2%;
-    border-radius: 2%;
-    box-shadow: 1px 1px 2px 4px rgb(226, 223, 223);
-}
-.welcome-message{
-    color: rgba(57, 57, 233, 0.808);
-    font-weight: lighter;
-    margin:0 0 15% 0;
-}
-.display{
-    display: block;
-    margin: 10% 0;
-}
-button,input{
-    width: 90%;
-}
-a.underline{
-    text-decoration: underline;
-}
-footer{
-    color:grey;
-    margin: 2% 0 0 0;
-}
-.invalid-feedback{
-    text-align: left;
-    margin-left: 2px;
+/* This is to make all the elements which are in inline to block such as links */
+.display {
+  display: block;
+  margin: 10% 0;
 }
 
-span{
-    margin:1% 2%;
-    text-align: center;
-    display: inline-block;
+button,
+input {
+  width: 90%;
 }
-.validation{
-    color: red;
-    margin-bottom: 2%;
-    font-weight: bolder;
+a.underline {
+  text-decoration: underline;
+}
+footer {
+  color: grey;
+  margin: 2% 0 0 0;
+}
+.invalid-feedback {
+  text-align: left;
+  margin-left: 2px;
+}
+
+span {
+  margin: 1% 2%;
+  text-align: center;
+  display: inline-block;
+}
+/* This is style the text which pops up when password and confirm password doesn't match */
+.validation {
+  color: red;
+  margin-bottom: 2%;
+  font-weight: bolder;
+}
+/* this is for the upper two button login and register for navigation */
+.login-nav {
+  width: 30%;
+  margin-right: 4%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.reg-nav {
+  width: 30%;
+  margin-left: 4%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+button.login-nav:focus {
+  outline: none;
+  border: none;
+}
+button.reg-nav:focus {
+  outline: none;
+  border: none;
+}
+.navigation {
+  margin-bottom: 15%;
+}
+/* this is used with javascript to show one page at a time */
+.display-none {
+  display: none;
+}
+
+.nav-color {
+  color: blue;
 }
