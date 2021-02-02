@@ -18,6 +18,14 @@ login_button.addEventListener('click', function () {
   login_button.classList.add('nav-color')
 })
 
+var reg_link_click = document.querySelector('.reg-link-click')
+reg_link_click.addEventListener('click', function () {
+  reg_button.click()
+})
+var reg_link_click = document.querySelector('.log-link-click')
+log_link_click.addEventListener('click', function () {
+  login_button.click()
+})
 /*this code is to validate the password and the confirm password*/
 var validate = document.querySelector('.need-validation')
 var validation = document.querySelector('.validation')
