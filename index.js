@@ -1,19 +1,3 @@
-/*this code is to validate the password and the confirm password*/
-var validate = document.querySelector('.need-validation')
-var validation = document.querySelector('.validation')
-validate.addEventListener('submit', function (event) {
-  var password = document.querySelector('#password')
-  var confirmPassword = document.querySelector('#confirmPassword')
-  if (password.value != confirmPassword.value) {
-    event.preventDefault()
-    event.stopPropagation()
-    validation.innerHTML = '⚠ password mismatch'
-  }
-  setTimeout(function () {
-    validation.innerHTML = ''
-  }, 1700)
-})
-
 /*this is to show one page at a time infront*/
 var login = document.querySelector('.login')
 var register = document.querySelector('.signup')
@@ -32,6 +16,22 @@ login_button.addEventListener('click', function () {
   login.classList.remove('display-none')
   reg_button.classList.remove('nav-color')
   login_button.classList.add('nav-color')
+})
+
+/*this code is to validate the password and the confirm password*/
+var validate = document.querySelector('.need-validation')
+var validation = document.querySelector('.validation')
+validate.addEventListener('submit', function (event) {
+  var password = document.querySelector('#register_password')
+  var confirmPassword = document.querySelector('#register_confirmPassword')
+  if (password.value != confirmPassword.value) {
+    event.preventDefault()
+    event.stopPropagation()
+    validation.innerHTML = '⚠ password mismatch'
+  }
+  setTimeout(function () {
+    validation.innerHTML = ''
+  }, 1700)
 })
 
 /*the end*/
