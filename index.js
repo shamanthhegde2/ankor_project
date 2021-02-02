@@ -33,3 +33,5 @@ login_button.addEventListener('click', function () {
   reg_button.classList.remove('nav-color')
   login_button.classList.add('nav-color')
 })
+
+/*the end*/
