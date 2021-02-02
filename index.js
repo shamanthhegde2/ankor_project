@@ -31,7 +31,7 @@ validate.addEventListener('submit', function (event) {
   }
   setTimeout(function () {
     validation.innerHTML = ''
-  }, 1700)
+  }, 2000)
 })
 
 /*the end*/
