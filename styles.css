@@ -12,7 +12,7 @@ body {
 .main-content {
   max-width: 350px;
   background-color: white;
-  margin: 3% auto auto auto;
+  margin: 4% auto auto auto;
   padding: 0% 2% 4%;
   border-radius: 2%;
   box-shadow: 1px 1px 2px 4px rgb(226, 223, 223);
@@ -21,7 +21,7 @@ body {
 /* to style the welcome message on the top */
 .welcome-message {
   color: rgba(57, 57, 233, 0.808);
-  font-weight: lighter;
+  font-weight: bold;
   margin: 0 0 15% 0;
 }
 
@@ -61,17 +61,27 @@ span {
 /* this is for the upper two button login and register for navigation */
 .login-nav {
   width: 40%;
+  font-size: 1.2rem;
   outline: none;
   background-color: transparent;
   border: solid 1px black;
   border-radius: 50px 15px 5px 50px; /*top-left top-right bottom-right bottom*/
+  transition: transform 0.5s;
 }
 .reg-nav {
   width: 40%;
+  font-size: 1.2rem;
   outline: none;
   background-color: transparent;
   border: solid 1px black;
   border-radius: 15px 50px 50px 5px;
+  transition: transform 0.5s;
+}
+.reg-nav:hover {
+  transform: scale(1.1);
+}
+.login-nav:hover {
+  transform: scale(1.1);
 }
 button.login-nav:focus {
   outline: none;
@@ -93,16 +103,20 @@ button.reg-nav:focus {
 }
 
 .nav-color {
-  color: #f2aa4cff;
-}
-.nav-color-two {
   color: white;
 }
+.nav-color-two {
+  color: #967cfb;
+}
 .nav-button-color {
-  background-color: #101820ff;
+  background-color: grey;
 }
 a:hover {
   cursor: pointer;
 }
 
+/* .login-button,
+.signup-button {
+  background-color: #967cfb;
+} */
 /*the end*/
