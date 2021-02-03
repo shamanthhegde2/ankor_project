@@ -3,6 +3,11 @@ body {
   background-color: #e9ecef;
   text-align: center;
 }
+/*to style the alternative like (or login using) tags*/
+.alternative {
+  margin: 10%;
+  color: blue;
+}
 /* to style the main content inside */
 .main-content {
   max-width: 350px;
@@ -55,29 +60,32 @@ span {
 }
 /* this is for the upper two button login and register for navigation */
 .login-nav {
-  width: 30%;
-  margin-right: 4%;
+  width: 40%;
   outline: none;
   background-color: transparent;
-  border: none;
+  border: solid 1px black;
+  border-radius: 50px 15px 5px 50px; /*top-left top-right bottom-right bottom*/
 }
 .reg-nav {
-  width: 30%;
-  margin-left: 4%;
+  width: 40%;
   outline: none;
   background-color: transparent;
-  border: none;
+  border: solid 1px black;
+  border-radius: 15px 50px 50px 5px;
 }
 button.login-nav:focus {
   outline: none;
-  border: none;
+  border: solid 1px black;
+  border-radius: 50px 15px 5px 50px;
 }
 button.reg-nav:focus {
   outline: none;
   border: none;
+  border: solid 1px black;
+  border-radius: 15px 50px 50px 5px;
 }
 .navigation {
-  margin-bottom: 15%;
+  padding: 10% 0%;
 }
 /* this is used with javascript to show one page at a time */
 .display-none {
@@ -85,10 +93,16 @@ button.reg-nav:focus {
 }
 
 .nav-color {
-  color: blue;
+  color: #f2aa4cff;
 }
- a:hover{
-   cursor: pointer;
- }
+.nav-color-two {
+  color: white;
+}
+.nav-button-color {
+  background-color: #101820ff;
+}
+a:hover {
+  cursor: pointer;
+}
 
 /*the end*/

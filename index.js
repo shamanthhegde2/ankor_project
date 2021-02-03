@@ -4,27 +4,30 @@ let register = document.querySelector('.signup')
 let login_button = document.querySelector('.login-nav')
 let reg_button = document.querySelector('.reg-nav')
 register.classList.add('display-none')
-login_button.classList.add('nav-color')
 
 function regbuttonClick() {
   login.classList.add('display-none')
   register.classList.remove('display-none')
   login_button.classList.remove('nav-color')
+  login_button.classList.add('nav-color-two')
+  reg_button.classList.remove('nav-color-two')
   reg_button.classList.add('nav-color')
 }
 function loginButtonClick() {
   register.classList.add('display-none')
   login.classList.remove('display-none')
   reg_button.classList.remove('nav-color')
+  reg_button.classList.add('nav-color-two')
+  login_button.classList.remove('nav-color-two')
   login_button.classList.add('nav-color')
 }
-reg_button.addEventListener('click', regbuttonClick)
-login_button.addEventListener('click', loginButtonClick)
+reg_button.onclick = regbuttonClick
+login_button.onclick = loginButtonClick
 
 let reg_link_click = document.querySelector('.reg-link-click')
-reg_link_click.addEventListener('click', regbuttonClick())
+reg_link_click.addEventListener('click', regbuttonClick)
 let log_link_click = document.querySelector('.log-link-click')
-log_link_click.addEventListener('click',loginButtonClick())
+log_link_click.addEventListener('click', loginButtonClick)
 
 /*this code is to validate the password and the confirm password*/
 let validate = document.querySelector('.need-validation')
@@ -42,4 +45,5 @@ validate.addEventListener('submit', function (event) {
   }, 2000)
 })
 
+/*this part is to change the colour of the pill buttons when clicked*/
 /*the end*/
