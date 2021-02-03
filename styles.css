@@ -87,5 +87,8 @@ button.reg-nav:focus {
 .nav-color {
   color: blue;
 }
+ a:hover{
+   cursor: pointer;
+ }
 
 /*the end*/
