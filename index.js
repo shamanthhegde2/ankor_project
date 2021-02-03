@@ -1,37 +1,37 @@
 /*this is to show one page at a time infront*/
-var login = document.querySelector('.login')
-var register = document.querySelector('.signup')
-var login_button = document.querySelector('.login-nav')
-var reg_button = document.querySelector('.reg-nav')
+let login = document.querySelector('.login')
+let register = document.querySelector('.signup')
+let login_button = document.querySelector('.login-nav')
+let reg_button = document.querySelector('.reg-nav')
 register.classList.add('display-none')
 login_button.classList.add('nav-color')
-reg_button.addEventListener('click', function () {
+
+function regbuttonClick() {
   login.classList.add('display-none')
   register.classList.remove('display-none')
   login_button.classList.remove('nav-color')
   reg_button.classList.add('nav-color')
-})
-login_button.addEventListener('click', function () {
+}
+function loginButtonClick() {
   register.classList.add('display-none')
   login.classList.remove('display-none')
   reg_button.classList.remove('nav-color')
   login_button.classList.add('nav-color')
-})
+}
+reg_button.addEventListener('click', regbuttonClick)
+login_button.addEventListener('click', loginButtonClick)
 
-var reg_link_click = document.querySelector('.reg-link-click')
-reg_link_click.addEventListener('click', function () {
-  reg_button.click()
-})
-var reg_link_click = document.querySelector('.log-link-click')
-log_link_click.addEventListener('click', function () {
-  login_button.click()
-})
+let reg_link_click = document.querySelector('.reg-link-click')
+reg_link_click.addEventListener('click', regbuttonClick())
+let log_link_click = document.querySelector('.log-link-click')
+log_link_click.addEventListener('click',loginButtonClick())
+
 /*this code is to validate the password and the confirm password*/
-var validate = document.querySelector('.need-validation')
-var validation = document.querySelector('.validation')
+let validate = document.querySelector('.need-validation')
+let validation = document.querySelector('.validation')
 validate.addEventListener('submit', function (event) {
-  var password = document.querySelector('#register_password')
-  var confirmPassword = document.querySelector('#register_confirmPassword')
+  let password = document.querySelector('#register_password')
+  let confirmPassword = document.querySelector('#register_confirmPassword')
   if (password.value != confirmPassword.value) {
     event.preventDefault()
     event.stopPropagation()
